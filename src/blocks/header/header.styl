@@ -1,0 +1,86 @@
+.header
+  background white
+
+.logo
+  color blue
+  display flex
+  font 400 30px/32px font__rockwell
+  margin 10px
+
+.logo_custom
+  font 700 30px/32px font__rockwell
+
+.logo__icon
+  height 32px
+  margin 0 18px 0 0
+  width 26px
+
+.nav-bar
+  align-items center
+  display flex
+  position absolute
+
+.nav-bar__list
+  display none
+  list-style-type none
+  margin 0
+  padding 0
+
+.nav-bar__title
+  color blue
+  cursor pointer
+  font 400 16px/32px font__raleway
+  padding 5px 0
+
+.nav-bar__title:hover .nav-bar__list
+  align-items flex-end
+  display flex
+  flex-flow column wrap
+  margin 0 0 0 -34px
+ 
+.nav-bar__link
+  background white
+  font 400 16px/32px font__rockwell
+  padding 10px
+  text-transform uppercase
+  transfrom color 300ms ease-in
+
+.nav-bar__link:hover
+  color yellow
+
+.contact
+  align-items center
+  display flex
+  flex-flow row wrap
+  justify-content space-around
+
+.contact__text
+  color blue
+  font 600 12px/24px font__rockwell
+
+.contact__button_live-chat
+  background yellow
+  border solid 2px yellow
+  color blue
+  font 600 14px/24px font__raleway
+  margin 0 20px 0 0
+  padding 10px 29px
+  transfrom background 300ms ease-in
+  position relative
+
+.contact__button_live-chat:hover
+  background white
+
+.contact__button_live-chat::after
+  content ""
+  background blue
+  height 34px
+  left 142px
+  opacity 0.31
+  position absolute
+  top 5px
+  width 1px
+
+.contact__tel
+  color blue
+  font 700 24px/24px sans-serif  

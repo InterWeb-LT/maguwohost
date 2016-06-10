@@ -1,0 +1,126 @@
+.page {
+  margin: 0;
+}
+.wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 300px;
+}
+.link {
+  color: #202242;
+  text-decoration: none;
+}
+.header {
+  background: #fff;
+}
+.logo {
+  color: #202242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: 400 30px/32px 'Rockwell', 'Times New Roman', serif;
+  margin: 10px;
+}
+.logo_custom {
+  font: 700 30px/32px 'Rockwell', 'Times New Roman', serif;
+}
+.logo__icon {
+  height: 32px;
+  margin: 0 18px 0 0;
+  width: 26px;
+}
+.nav-bar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+.nav-bar__list {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-bar__title {
+  color: #202242;
+  cursor: pointer;
+  font: 400 16px/32px 'Raleway', Arial, sans-serif;
+  padding: 5px 0;
+}
+.nav-bar__title:hover .nav-bar__list {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
+  margin: 0 0 0 -34px;
+}
+.nav-bar__link {
+  background: #fff;
+  font: 400 16px/32px 'Rockwell', 'Times New Roman', serif;
+  padding: 10px;
+  text-transform: uppercase;
+  transfrom: color 300ms ease-in;
+}
+.nav-bar__link:hover {
+  color: #ffe13e;
+}
+.contact {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.contact__text {
+  color: #202242;
+  font: 600 12px/24px 'Rockwell', 'Times New Roman', serif;
+}
+.contact__button_live-chat {
+  background: #ffe13e;
+  border: solid 2px #ffe13e;
+  color: #202242;
+  font: 600 14px/24px 'Raleway', Arial, sans-serif;
+  margin: 0 20px 0 0;
+  padding: 10px 29px;
+  transfrom: background 300ms ease-in;
+  position: relative;
+}
+.contact__button_live-chat:hover {
+  background: #fff;
+}
+.contact__button_live-chat::after {
+  content: "";
+  background: #202242;
+  height: 34px;
+  left: 142px;
+  opacity: 0.31;
+  position: absolute;
+  top: 5px;
+  width: 1px;
+}
+.contact__tel {
+  color: #202242;
+  font: 700 24px/24px sans-serif;
+}
