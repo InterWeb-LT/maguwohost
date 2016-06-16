@@ -2,26 +2,33 @@
   margin 0
   background lightpink
 
-.wrapper
-  align-items center
-  display flex
-  flex-flow row wrap
-  justify-content space-between
-  margin 0 auto
-  width 300px
-
 .link
   color blue
   text-decoration none
 
+.wrapper
+  margin 0 auto
+
+.wrapper_header
+  align-items center
+  display flex
+  flex-flow row wrap
+  justify-content space-between
+
+.wrapper_splash
+  align-items center
+  display flex
+  flex-flow column wrap
+  justify-content space-around
+
 @media (min-width: tablet)
   .wrapper
-    width 760px
+    width 40em
     
 @media (min-width: screen)
   .wrapper
-    width 1020px
+    width 64em
 
 @media (min-width: screen2)
   .wrapper
-    width 1280px
+    width 90em

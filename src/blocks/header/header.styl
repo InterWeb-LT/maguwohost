@@ -18,6 +18,7 @@
 .nav-bar
   align-items center
   display flex
+  margin 10px
   position relative
 
 .nav-bar__list
@@ -42,9 +43,9 @@
 .nav-bar__link
   background white
   font 400 16px/32px font__rockwell
-  padding 10px 0 10px 10px
+  padding 10px
   text-transform uppercase
-  transfrom color 300ms ease-in
+  transition color 100ms ease-in
 
 .nav-bar__link:hover
   color yellow
@@ -53,7 +54,8 @@
   align-items center
   display flex
   flex-flow row wrap
-  justify-content space-around
+  justify-content center
+  width 100%
 
 .contact__text
   color blue
@@ -66,7 +68,7 @@
   font 600 14px/24px font__raleway
   margin 0 20px 0 0
   padding 10px 29px
-  transfrom background 300ms ease-in
+  transition background 300ms ease-in
   position relative
 
 .contact__button_live-chat:hover
@@ -85,17 +87,11 @@
 .contact__tel
   color blue
   font 700 24px/24px sans-serif
+  padding 0 0 0 20px
   
 @media (min-width: tablet)
-  .contact
-    justify-content center
-    width 100%
-  
   .contact__button_live-chat
     margin 0 20px
-  
-  .contact__tel
-    padding 0 0 0 20px
 
 @media (min-width: screen)
   .nav-bar
@@ -116,6 +112,9 @@
    
   .nav-bar__link
     padding 10px
+  
+  .contact__text
+    width none
 
 @media (min-width: screen2)
   .nav-bar__item
