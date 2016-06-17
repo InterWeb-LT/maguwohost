@@ -5,14 +5,14 @@
 .splash__title
   color white
   font 400 48px font__rockwell
-  margin 220px 0 0 0
+  margin 20px 0 0 0
   padding 10px
   text-align center
 
 .splash__description
   color white
   font 400 30px/24px font__raleway
-  margin 25px 0 0 0
+  margin 5px 0 0 0
   position relative
 
 .splash__description::after
@@ -20,19 +20,23 @@
   background url(../asset/splash__description.png) no-repeat
   height 108px
   position absolute
-  top 90px
+  top 120px
   left 50%
   margin-left -50px
   width 101px
 
+.splash__description-text
+  padding 5px
+  text-align center
+
 .splash__check-domain
   border solid 18px rgba(white, 0.5)
-  margin 230px 0 140px
+  margin 141px 0 28px
 
 .form
   display flex
-  justify-content center
-  align-items flex-start
+  flex-flow row wrap
+  justify-content space-between
 
 .form__input,
 .form__select
@@ -42,7 +46,9 @@
 
 .form__input
   padding 17px 20px 16px 20px
+  flex-grow 2
   font 400 18px font__raleway
+  width 100%
 
 .form__select
   appearance none
@@ -50,7 +56,7 @@
   background-size 15px 8px
   border-right solid 1px white
   font 700 18px font__raleway
-  padding 11px 45px 11px 20px
+  padding 16px 45px 15px 20px
 
 .form__select:focus
   outline none
@@ -65,8 +71,9 @@
   background yellow
   border solid 2px yellow
   color white
+  flex-grow 2
   font 700 14px font__raleway
-  padding 17px 20px
+  padding 17px 19px
   transition background, color 300ms ease-in
 
 .form__button:hover
@@ -74,45 +81,36 @@
   color blue
   cursor pointer
 
-// @media (min-width: mobile2)
-// .form
-//   padding 0 50px
+@media (min-width: tablet)
+  .splash__description
+    display flex
+    flex-flow row wrap
+  
+  .splash__description::after
+    top 50px
+  
+  .form__input
+    width initial
 
-// @media (min-width: tablet)
-// .form
-//   padding 0 200px
+@media (min-width: screen)
+  .splash__title
+    margin 110px 0 0 0
+  
+  .splash__description
+    margin 25px 0 0 0
+  
+  .splash__description::after
+    top 70px
+  
+  .splash__check-domain
+    margin 180px 0 70px
 
-// @media (min-width: screen)
-// .form
-//   padding 0
+@media (min-width: screen2)
+  .splash__title
+    margin 220px 0 0 0
+  
+  .splash__check-domain
+    margin 230px 0 140px
 
-// .form__input,
-// .form__select
-//   float left
-//   font 400 16px/1 fontArray
-//   padding 14px 25px
-//   width 196px
-
-// .form__input[name="firstName"],
-// .form__input[name="email"]
-//   margin 10px 10px 10px 0
-
-// .form__input[name="lastName"]
-//   margin 10px 0 10px 10px
-
-// .form__select
-//   width 250px
-
-// .form__select_style
-//   background url(../img/form__select_arrow.png) no-repeat 205px white
-//   margin 10px 0 10px 10px
-//   width 250px
-
-// .form__textarea
-//   width 466px
-
-// .form__button
-//   float right
-//   font 700 20px/1 fontArray
-//   margin-bottom 30px
-//   padding 15px 20px
+  .splash__description::after
+    top 90px

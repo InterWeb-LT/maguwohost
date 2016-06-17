@@ -1,0 +1,62 @@
+.service
+  align-items center
+  display flex
+  flex-flow column wrap
+
+.service_webhost
+  background blue
+
+.service_domain
+  background yellow
+
+.service__icon
+  margin 50px 0 0 0
+
+.service__icon_webhost
+  background url(../asset/service__icon_webhost.png) no-repeat
+  height 169px
+  width 168px
+
+.service__icon_domain
+  color blue
+  font 700 134px font__raleway
+
+.service__title
+  color white
+  font 700 30px font__raleway
+  margin 50px 0 0 0
+
+.service__description
+  color white
+  font 400 14px font__raleway
+  margin 20px 0 0 0
+  padding 10px
+  text-align center
+
+.service__button
+  color white
+  border solid 2px white
+  font 700 18px font__raleway
+  margin 30px 0 50px 0
+  padding 20px 50px
+  text-decoration none
+  transition background, color 300ms ease-in
+
+.service__button:hover
+  background white
+  color blue
+
+@media (min-width: tablet)
+  .service__title
+    font 700 36px font__raleway
+  
+  .service__description
+    padding 10px 100px
+
+@media (min-width: screen)
+  .service_domain
+    padding 12px 0 0 0
+
+@media (min-width: screen2)
+  .service__description
+    padding 10px 150px

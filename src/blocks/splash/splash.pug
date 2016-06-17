@@ -1,12 +1,14 @@
 section.splash
   div.wrapper.wrapper_splash
     div.splash__title Just a Proffesional Web Hosting Services
-    div.splash__description modern  -  fast  -  reliable
+    div.splash__description
+      div.splash__description-text modern
+      div.splash__description-text fast
+      div.splash__description-text reliable
     form.splash__check-domain.form
       input(name="domainName" type="text" placeholder="Your Domain Name ...").form__input
-      div.form__select_style
-        select(name="domain").form__select
-          option(value="com").form__option .com
-          option(value="ru").form__option .ru
-          option(value="io").form__option .io
+      select(name="domain").form__select
+        option(value="com").form__option .com
+        option(value="ru").form__option .ru
+        option(value="io").form__option .io
       button(name="send" type="submit").form__button Check Availability
