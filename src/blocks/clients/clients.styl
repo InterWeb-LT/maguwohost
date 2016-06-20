@@ -1,0 +1,74 @@
+.clients
+  background white
+  padding 50px 0
+
+.clients__title
+  color blue
+  font 700 36px font__raleway
+
+.clients__description
+  color light__grey_text
+  font 400 16px font__raleway
+  margin 10px 0
+  padding 0 10px
+  text-align center
+
+.clients_wrap,
+.clients__company_wrap,
+.clients__testimonial_wrap
+  align-items center
+  display flex
+  flex-flow column nowrap
+
+.clients__company
+  height 115px
+  margin 10px
+  width 172px
+
+.clients__testimonial
+  background light__grey_background
+  margin 30px 10px
+  padding 15px
+  position relative
+  
+.clients__text
+  color light__grey_text
+  font italic 14px font__rockwell
+
+.clients__author
+  color dimgrey
+  font 700 16px font__raleway
+  margin 25px 0 15px 0
+
+.clients__author-photo
+  border 5px solid rgba(32, 34, 66, 0.11)
+  border-radius 50%
+  height 100px
+  position absolute
+  right 20px
+  bottom -50px
+  width 100px
+
+@media (min-width: tablet)
+  .clients__company_wrap,
+  .clients__testimonial_wrap
+    flex-flow row wrap
+    justify-content center
+  
+  .clients__testimonial
+    width 500px
+
+@media (min-width: screen2)
+  .clients_wrap
+    align-items flex-start
+    display flex
+    flex-flow column nowrap
+
+  .clients__description
+    padding 0
+    text-align left
+    width 325px
+  
+  .clients__testimonial
+    margin 50px 15px
+    width 370px

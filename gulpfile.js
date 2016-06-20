@@ -8,6 +8,7 @@ var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 var pug = require('gulp-pug');
 var reload = browserSync.reload;
+var spritesmith = require('gulp.spritesmith');
 var stylus = require('gulp-stylus');
 
 // Develop
@@ -43,6 +44,20 @@ gulp.task('stylus', function () {
     .pipe(autoprefixer())
     .pipe(gulp.dest('src/css'));
 });
+
+gulp.task('sprite:dev', ['clean:sprite'], function () {
+  var spriteData = gulp.src('src/asset/sprite/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.styl',
+    imgPath: '../asset/sprite.png'
+  }));
+  spriteData.img.pipe(gulp.dest('src/asset'));
+  spriteData.css.pipe(gulp.dest('src/blocks/common'));
+});
+
+gulp.task('clean:sprite', function() {
+  return del.sync('src/asset/sprite.png');
+})
 
 // Build
 // _____

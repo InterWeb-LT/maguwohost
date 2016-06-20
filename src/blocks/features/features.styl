@@ -1,0 +1,70 @@
+.features
+  background #fbf8f1 url(../asset/features__bg.png) center 50px no-repeat
+  padding 50px 0
+
+.features__title
+  color blue
+  font 700 48px font__raleway
+
+.features__subtitle
+  color blue
+  font 400 24px font__raleway
+  margin 10px 0 0 0
+
+.feature
+  align-items center
+  display flex
+  flex-flow column nowrap
+
+.feature__icon
+  margin 50px 0 0 0
+
+.feature__icon_support
+  sprite($feature__icon_support)
+
+.feature__icon_cloud
+  sprite($feature__icon_cloud)
+
+.feature__icon_database
+  sprite($feature__icon_database)
+
+.feature__icon_monitoring
+  sprite($feature__icon_monitoring)
+
+.feature__title
+  color yellow
+  font 400 30px font__raleway
+  margin 30px 0 0 0
+
+.feature__description
+  color blue
+  font 400 14px font__raleway
+  margin 15px 0 0 0
+  padding 0 10px
+  text-align center
+
+@media (min-width: tablet)
+  .feature_wrap
+    display flex
+    flex-flow row wrap
+    justify-content center
+  
+  .feature
+    margin 0 10px
+    width 270px
+
+@media (min-width: screen)
+  .features
+    background #fbf8f1 url(../asset/features__bg.png) center 75px no-repeat
+    padding 100px 0
+
+  .feature
+    width 350px
+
+@media (min-width: screen2)
+  .feature
+    margin 0 20px
+    width 270px
+  
+  .feature__icon
+    margin 80px 0 0 0

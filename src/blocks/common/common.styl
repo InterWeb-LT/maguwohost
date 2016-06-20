@@ -21,6 +21,18 @@
   flex-flow column wrap
   justify-content space-around
 
+.wrapper_features
+  align-items center
+  display flex
+  flex-flow column nowrap
+  justify-content space-around
+
+.wrapper_clients
+  align-items center
+  display flex
+  flex-flow column nowrap
+  justify-content space-around
+
 @media (min-width: tablet)
   .wrapper
     width 40em
@@ -43,3 +55,7 @@
 @media (min-width: screen2)
   .wrapper
     width 90em
+  
+  .wrapper_clients
+    flex-flow row wrap
+    justify-content space-around
