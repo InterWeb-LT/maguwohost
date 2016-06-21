@@ -6,6 +6,7 @@ var cssnano = require('gulp-cssnano');
 var del = require('del');
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
+var imagemin = require('gulp-imagemin');
 var pug = require('gulp-pug');
 var reload = browserSync.reload;
 var spritesmith = require('gulp.spritesmith');
@@ -79,8 +80,9 @@ gulp.task('minify:html', function() {
 });
 
 gulp.task('images', function(){
-  return gulp.src('src/img/*.+(png|jpg)')
-  .pipe(gulp.dest('build/img'));
+  return gulp.src('src/asset/*.+(png|jpg)')
+  .pipe(imagemin())
+  .pipe(gulp.dest('build/asset'));
 });
 
 gulp.task('build', [

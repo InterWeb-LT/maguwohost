@@ -1,0 +1,101 @@
+.footer
+  background blue
+  opacity 0.9
+  padding 50px 0
+
+.footer__map
+  height 409px
+  margin 0 0 0 -600px
+  width 860px
+
+.nav-bar__title_footer
+  color white
+  font 700 18px font__raleway
+  padding 0 0 30px 0
+  text-align center
+  
+.nav-bar__list_footer
+  list-style none
+  margin 0
+  padding 0
+  text-align center
+
+.nav-bar__item_footer
+  font 400 16px font__raleway
+  padding 10px 0
+  position relative
+
+.nav-bar__item_footer::after
+  background white
+  content ""
+  height 1px
+  right 22px
+  opacity 0.16
+  position absolute
+  top -2px
+  width 65px
+
+.nav-bar__item_footer:first-child::after
+  display none
+
+.footer__copyright
+  color white
+  font 400 14px font__raleway
+  margin 70px 0 0 0
+  position relative
+
+.footer__copyright::before
+  sprite($footer__copyright)
+  content ""
+  position absolute
+  top -50px
+  left 50%
+  margin-left -16px
+
+.social__list
+  display flex
+  list-style none
+  padding 0
+
+.social__item
+  margin 0 10px
+
+.link_footer
+  color white
+  transition color 100ms ease-in
+
+.link_footer:hover
+  color yellow
+
+.link_social
+  color yellow
+  transition color 100ms ease-in
+
+.link_social:hover
+  color white
+
+@media (min-width: tablet)
+  .footer__map
+    margin 0 0 0 -400px
+  
+  .footer_wrap
+    align-items flex-end
+    display flex
+    flex-flow column nowrap
+    
+  .nav-bar__list_footer
+    text-align right
+  
+  .nav-bar__item_footer::after
+    right 0
+
+@media (min-width: screen)
+  .footer__map
+    margin 0
+
+@media (min-width: screen2)
+  .footer__map
+    margin 0
+    
+  .footer_wrap
+    margin 0 0 0 200px

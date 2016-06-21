@@ -1,6 +1,5 @@
 .page
   margin 0
-  background lightpink
 
 .link
   color blue
@@ -21,17 +20,23 @@
   flex-flow column wrap
   justify-content space-around
 
-.wrapper_features
-  align-items center
-  display flex
-  flex-flow column nowrap
-  justify-content space-around
-
+.wrapper_features,
 .wrapper_clients
   align-items center
   display flex
   flex-flow column nowrap
   justify-content space-around
+
+.wrapper_plans
+  display flex
+  flex-flow row wrap
+  justify-content space-around
+
+.wrapper_footer
+  align-items center
+  display flex
+  flex-flow column wrap
+  justify-content center
 
 @media (min-width: tablet)
   .wrapper
@@ -39,6 +44,10 @@
   
   .wrapper_services
     width initial
+  
+  .wrapper_footer
+    flex-flow row wrap
+    justify-content space-around
     
 @media (min-width: screen)
   .wrapper
