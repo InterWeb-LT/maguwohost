@@ -1,0 +1,82 @@
+.nav-bar
+  align-items center
+  display flex
+  margin 10px
+  position relative
+
+.nav-bar__list_header
+  display none
+  list-style-type none
+  margin 0
+  padding 0
+  position absolute
+  top 35px
+  right 0
+
+.nav-bar__title_header
+  color blue
+  font 400 16px font__raleway
+  padding 5px 0
+
+.nav-bar:hover .nav-bar__list_header
+  align-items flex-end
+  display flex
+  flex-flow column wrap
+
+.nav-bar__title_footer
+  color white
+  font 700 18px font__raleway
+  padding 0 0 30px 0
+  text-align center
+  
+.nav-bar__list_footer
+  list-style none
+  margin 0
+  padding 0
+  text-align center
+
+.nav-bar__item_footer
+  font 400 16px font__raleway
+  padding 10px 0
+  position relative
+
+.nav-bar__item_footer::after
+  background white
+  content ""
+  height 1px
+  right 22px
+  opacity 0.16
+  position absolute
+  top -2px
+  width 65px
+
+.nav-bar__item_footer:first-child::after
+  display none
+
+@media (min-width: tablet)
+  .nav-bar__list_footer
+    text-align right
+  
+  .nav-bar__item_footer::after
+    right 0
+
+@media (min-width: screen)
+  .nav-bar
+    align-items flex-start
+    display flex
+
+  .nav-bar__list_header
+    display flex
+    position relative
+    top 0
+
+  .nav-bar__title_header
+    display none
+
+  .nav-bar:hover .nav-bar__list_header
+    display flex
+    flex-flow row wrap
+
+@media (min-width: screen2)
+  .nav-bar__item
+    margin 10px

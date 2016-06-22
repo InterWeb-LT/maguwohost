@@ -1,0 +1,60 @@
+.wrapper
+  margin 0 auto
+
+.wrapper_header
+  align-items center
+  display flex
+  flex-flow row wrap
+  justify-content space-between
+
+.wrapper_splash
+  align-items center
+  display flex
+  flex-flow column wrap
+  justify-content space-around
+
+.wrapper_features,
+.wrapper_clients
+  align-items center
+  display flex
+  flex-flow column nowrap
+  justify-content space-around
+
+.wrapper_plans
+  display flex
+  flex-flow row wrap
+  justify-content space-around
+
+.wrapper_footer
+  align-items center
+  display flex
+  flex-flow column wrap
+  justify-content center
+
+@media (min-width: tablet)
+  .wrapper
+    width 40em
+  
+  .wrapper_services
+    width initial
+  
+  .wrapper_footer
+    flex-flow row wrap
+    justify-content space-around
+    
+@media (min-width: screen)
+  .wrapper
+    width 64em
+  
+  .wrapper_services
+    display flex
+    flex-flow row nowrap
+    align-items flex-end
+
+@media (min-width: screen2)
+  .wrapper
+    width 90em
+  
+  .wrapper_clients
+    flex-flow row wrap
+    justify-content space-around
